@@ -1,0 +1,124 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/*=== Global=== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.active {
+    color: orange;
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* Navbar*/
+.menu_bar {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color:black;
+}
+.logo{
+    color: bisque;
+    font-size: 30px;
+}
+.logo span{
+    color:aqua;
+}
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+} 
+.menu_bar ul li{
+padding: 10px 30px;
+position:relative;
+}
+.menu_bar ul li a{
+    color:blanchedalmond;
+    text-decoration: none;
+    font-size: 20px;
+
+    transition: all 03s;  
+}
+
+.menu_bar ul li a:hover{
+    color: var(--color-primary);
+}
+.dropdown_menu {
+    display: none;
+}
+.menu_bar ul li:hover .dropdown_menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color:bisque;
+}
+.dropdown_menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown_menu ul li {
+    width: 50px;
+    padding: 10px;
+}
+header {
+    width: 50vw;
+    height: 5vh;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: aqua;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.header-content h2 {
+    font-size: 4vmin;
+}
+.ctn {
+  padding: 8px 15px;
+  background-color: orangered;
+  border-radius: 30px;
+  color:brown;
+}
+
+<style>
+    form {
+        width: 30px;
+        margin: 0 auto;
+    }
+    label, input, textarea {
+        display: block;
+        width: 30%;
+        margin-bottom: 10px;
+        display: flex;
+    }
+    button {
+        display: block;
+        width: 10%;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        display: flex;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
